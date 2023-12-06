@@ -4,6 +4,7 @@
   --third-color: #00695c;
   --highlight-color: white;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --font-commonused: "Merriweather", serif;
 }
 
 body {
@@ -37,13 +38,17 @@ p {
 .hero {
   background: #b2dfdb;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-commonused);
 }
 
 .hero h2 {
   font-weight: bold;
   font-size: 36px;
   padding-top: 10px;
+}
+
+.shortintro {
+  font-family: var(--font-commonused);
 }
 .navigation-links {
   display: flex;
@@ -72,6 +77,13 @@ p {
   border: var(--primary-color);
 }
 
+.allimaging {
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+.allimaging:hover {
+  transform: scale(1.2);
+}
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
