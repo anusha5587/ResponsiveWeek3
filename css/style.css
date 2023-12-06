@@ -2,7 +2,7 @@
   --primary-color: #26a69a;
   --secondary-color: #e0f2f1;
   --third-color: #00695c;
-  --highlight-color: #ced5d4;
+  --highlight-color: white;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -40,6 +40,11 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+.hero h2 {
+  font-weight: bold;
+  font-size: 36px;
+  padding-top: 10px;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -59,7 +64,8 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
-.contact-link:hover {
+.contact-link:hover,
+.primary-link:hover {
   text-decoration: underline;
   background-color: var(--third-color);
   color: var(--highlight-color);
