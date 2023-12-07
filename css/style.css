@@ -87,38 +87,6 @@ p {
 .allimaging:hover {
   transform: scale(1.2);
 }
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
-
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -133,6 +101,36 @@ p {
   text-decoration: underline;
 }
 
+.about-section {
+  padding: 0;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 70px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.about-section h2 {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: var(--font-commonused);
+}
+
+.about-section-para {
+  font-size: 15px;
+  line-height: 1;
+}
+.profile-pic {
+  border-radius: 10px;
+  padding: 20px;
+}
+.about-section-content {
+  margin: 15px;
+  text-align: center;
+  flex-wrap: wrap;
+}
 .project-details {
   padding: 50px 60px 0;
 }
@@ -144,6 +142,7 @@ p {
   h2 {
     font-size: 38px;
   }
+
   .hero {
     padding: 40px 5px;
   }
@@ -151,5 +150,9 @@ p {
     padding: 0;
     text-align: center;
     margin-top: 20px;
+  }
+
+  .about-section-content {
+    text-align: center;
   }
 }
