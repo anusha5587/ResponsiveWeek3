@@ -31,6 +31,9 @@ h3 {
   opacity: 0.7;
 }
 
+.logo {
+  width: 50px;
+}
 .content-para {
   font-size: 16px;
   line-height: 30px;
@@ -101,6 +104,20 @@ h3 {
   text-decoration: underline;
 }
 
+.navbar-brand {
+  margin: 0;
+}
+
+.navbar-toggler {
+  background-color: whitesmoke;
+  border: #e0f2f1;
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  padding-right: 30px;
+}
 .content-container {
   padding: 0;
   text-align: center;
@@ -152,6 +169,12 @@ h3 {
   }
   h2 {
     font-size: 38px;
+  }
+  .navbar-nav {
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
   }
 
   .content h3 {
