@@ -30,11 +30,15 @@ h3 {
   opacity: 0.7;
 }
 
-p {
+.content-para {
   font-size: 16px;
   line-height: 30px;
 }
 
+.contect-work-para {
+  font-size: 10px;
+  font-weight: bold;
+}
 .hero {
   background: #b2dfdb;
   text-align: center;
@@ -50,6 +54,7 @@ p {
 
 .shortintro {
   font-family: var(--font-commonused);
+  font-weight: bold;
 }
 .navigation-links {
   display: flex;
@@ -65,12 +70,6 @@ p {
   text-transform: capitalize;
 }
 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-.contact-link:hover,
 .primary-link:hover {
   text-decoration: underline;
   background-color: var(--third-color);
@@ -101,58 +100,68 @@ p {
   text-decoration: underline;
 }
 
-.about-section {
+.content-container {
   padding: 0;
   text-align: center;
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 64px;
   line-height: 70px;
   font-family: "Work Sans", sans-serif;
 }
 
-.about-section h2 {
+.content h2 {
   font-size: 12px;
   font-weight: bold;
   font-family: var(--font-commonused);
 }
 
+.content h3 {
+  font-size: 25px;
+  color: black;
+  font-weight: bolder;
+}
+
 .about-section-para {
   font-size: 15px;
-  line-height: 1;
 }
 .profile-pic {
   border-radius: 10px;
   padding: 20px;
 }
-.about-section-content {
+.content {
   margin: 15px;
   text-align: center;
-  flex-wrap: wrap;
 }
 .project-details {
   padding: 50px 60px 0;
 }
 
 @media (max-width: 900px) {
-  h1 {
+  h1,
+  .content h1 {
     font-size: 40px;
   }
   h2 {
     font-size: 38px;
   }
 
+  .content h3 {
+    font-size: 15px;
+  }
+
   .hero {
     padding: 40px 5px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
   }
   .project-details {
     padding: 0;
     text-align: center;
     margin-top: 20px;
-  }
-
-  .about-section-content {
-    text-align: center;
   }
 }
