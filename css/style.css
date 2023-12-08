@@ -21,7 +21,8 @@ h1 {
   font-size: 96px;
 }
 
-h2 {
+h2,
+h4 {
   font-size: 44px;
 }
 
@@ -33,6 +34,10 @@ h3 {
 
 .logo {
   width: 50px;
+}
+
+.logo:hover {
+  transform: scale(1.2);
 }
 .content-para {
   font-size: 16px;
@@ -92,7 +97,7 @@ h3 {
 }
 .primary-link {
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 15px 15px;
   text-decoration: none;
   text-transform: capitalize;
   background: var(--primary-color);
@@ -156,10 +161,49 @@ h3 {
 .project-details {
   padding: 50px 60px 0;
 }
-
+.content-info {
+  font-size: 15px;
+}
 .contact-details {
   font-size: 10px;
   color: black;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-id {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+footer .email-id:hover {
+  color: var(--third-color);
+  text-decoration: underline;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--third-color);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px 16px;
+  font-size: 30px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: whitesmoke;
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 900px) {
@@ -179,6 +223,10 @@ h3 {
 
   .content h3 {
     font-size: 15px;
+  }
+
+  .content-info {
+    font-size: 10px;
   }
 
   .hero {
