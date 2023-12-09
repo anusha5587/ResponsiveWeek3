@@ -4,7 +4,7 @@
   --third-color: #00695c;
   --highlight-color: white;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --font-commonused: "Merriweather", serif;
+  --font-commonused: "Work Sans", sans-serif;
 }
 
 body {
@@ -27,7 +27,7 @@ h4 {
 }
 
 h3 {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font-commonused);
   font-size: 24px;
   opacity: 0.7;
 }
@@ -136,28 +136,46 @@ h3 {
   padding-right: 30px;
 }
 
-.content-container {
-  padding: 0;
+.content {
+  margin: 15px;
   text-align: center;
 }
 
 .content h1 {
   font-size: 64px;
   line-height: 70px;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font-commonused);
 }
 
 .content h2 {
   font-size: 12px;
   font-weight: bold;
-  font-family: "Work Sans", sans-serif;
+  color: black;
+  font-family: var(--font-commonused);
 }
 
 .content h3 {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font-commonused);
+  text-align: center;
   font-size: 30px;
   color: black;
   font-weight: bolder;
+}
+
+.contact-me h1,
+.contact-me h3,
+.contact-me p {
+  text-align: left;
+}
+.contact-details a {
+  text-decoration: none;
+  text-align: left;
+  font-family: var(--font-commonused);
+  color: var(--third-color);
+}
+
+.contact-details:hover {
+  text-decoration: underline;
 }
 
 .project-links a {
@@ -176,19 +194,12 @@ h3 {
   border-radius: 10px;
   padding: 20px;
 }
-.content {
-  margin: 15px;
-  text-align: center;
-}
+
 .project-details {
   padding: 50px 60px 0;
 }
 .content-info {
   font-size: 15px;
-}
-.contact-details {
-  font-size: 10px;
-  color: black;
 }
 
 footer .contact-box {
@@ -230,7 +241,7 @@ footer .social-links a:hover {
 .project-coded {
   font-size: 12px;
   font-weight: bold;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font-commonused);
 }
 
 @media (max-width: 900px) {
