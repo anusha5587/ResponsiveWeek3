@@ -160,6 +160,15 @@ h3 {
   font-weight: bolder;
 }
 
+.project-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-links:hover {
+  text-decoration: underline;
+}
+
 .about-section-para {
   font-size: 15px;
 }
@@ -216,6 +225,12 @@ footer .social-links a {
 footer .social-links a:hover {
   color: whitesmoke;
   background-color: var(--primary-color);
+}
+
+.project-coded {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Work Sans", sans-serif;
 }
 
 @media (max-width: 900px) {
