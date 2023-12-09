@@ -39,15 +39,29 @@ h3 {
 .logo:hover {
   transform: scale(1.2);
 }
+
+.nav-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  color: #29b6f6;
+  font-weight: bold;
+}
+
 .content-para {
   font-size: 16px;
   line-height: 30px;
 }
 
-.contect-work-para {
-  font-size: 10px;
-  font-weight: bold;
-}
 .hero {
   background: #b2dfdb;
   text-align: center;
@@ -79,13 +93,6 @@ h3 {
   text-transform: capitalize;
 }
 
-.primary-link:hover {
-  text-decoration: underline;
-  background-color: var(--third-color);
-  color: var(--highlight-color);
-  border: var(--primary-color);
-}
-
 .allimaging {
   border-radius: 10px;
   width: 100%;
@@ -99,18 +106,19 @@ h3 {
   border-radius: 4px;
   padding: 15px 15px;
   text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
+.primary-link:hover {
+  text-decoration: underline;
+  background-color: var(--third-color);
+  color: var(--highlight-color);
+  border: var(--primary-color);
+}
 
 .navbar-brand:hover {
   text-decoration: underline;
-}
-
-.navbar-brand {
-  margin: 0;
 }
 
 .navbar-toggler {
@@ -119,10 +127,15 @@ h3 {
   box-shadow: none;
 }
 
+.navbar-brand {
+  margin: 0;
+}
+
 .navbar-collapse {
   justify-content: flex-end;
   padding-right: 30px;
 }
+
 .content-container {
   padding: 0;
   text-align: center;
@@ -172,7 +185,6 @@ h3 {
 footer .contact-box {
   background-color: var(--secondary-color);
   padding: 30px;
-
   border-radius: 10px;
 }
 
